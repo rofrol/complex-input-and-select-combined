@@ -1,6 +1,20 @@
-# Getting Started with Create React App
+# complex-input-and-select-combined
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## Requirements
+
+- can enter only digits
+- mask input like `***-***-****`
+- red background if less than 10 digits entered and more than 0 digits entered
+- red background if 10 digits entered but server returned that this number is invalid
+- prevent from making request to check mdn if there is already 10 digits entered and there is event of entering new digit
+- make request for validation when input is initialized with 10 digits
+- after making request for validation, make another request if there are alternative numbers associated with currently entered number
+- if alternative_numbers.length  > 0 && "alternative numbers" is checked, then show select instead of input
+- when "alternative numbers" is checked then open select and main number should be selected
+- if there is error, error message should be shown instead of label
+- digits can be initialized outside of input, for example passed in searchParams
 
 ## Available Scripts
 
